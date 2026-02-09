@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-layout">
+  
+      <aside class="sidebar">
+        <h2>TaskFlow</h2>
+        <ul>
+          <li>Dashboard</li>
+          <li>My Tasks</li>
+          <li>Completed</li>
+          <li>Settings</li>
+        </ul>
+      </aside>
+  
+      <main class="main-content">
+        <header class="topbar">
+          <h1>My Tasks</h1>
+        </header>
+  
+        <section class="task-creator">
+          <input id="taskInput" placeholder="Add a new task...">
+          <select id="priority">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+          <button onclick="addTask()">Add Task</button>
+        </section>
+  
+        <section id="taskList" class="task-grid"></section>
+      </main>
+  
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
+
+</html>
